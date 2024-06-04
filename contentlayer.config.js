@@ -44,6 +44,9 @@ export const Post = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
+    lastmod: {
+      type: "date"
+    },
   },
   computedFields,
 }))
