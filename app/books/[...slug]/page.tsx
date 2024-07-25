@@ -29,7 +29,7 @@ export async function generateMetadata({
 }): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug.join('/'))
   const post = allBooks.find((p) => p.slug === slug)
-  const authorList = post?.authors || ['default']
+  const authorList = post?.author || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
