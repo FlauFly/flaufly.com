@@ -22,7 +22,7 @@ export default async function Page() {
           <div className="mb-2 mr-5 mt-2">
             <Link
               href={'/books'}
-              className="mr-3·text-3xl·font-medium·uppercase·text-primary-500·hover:text-primary-600·dark:hover:text-primary-400"
+              className="mr-3 text-3xl font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
               Books
             </Link>
@@ -30,7 +30,7 @@ export default async function Page() {
           <div className="mb-2 mr-5 mt-2">
             <Link
               href={'/movies'}
-              className="mr-3·text-3xl·font-medium·uppercase·text-primary-500·hover:text-primary-600·dark:hover:text-primary-400"
+              className="mr-3 text-3xl font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
               Movies
             </Link>
