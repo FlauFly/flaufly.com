@@ -125,6 +125,74 @@ export const Blog = defineDocumentType(() => ({
   },
 }))
 
+export const Books = defineDocumentType(() => ({
+  name: 'Books',
+  filePathPattern: 'books/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    date: { type: 'date', required: true },
+    cover: { type: 'string', required: true },
+    genres: { type: 'list', of: { type: 'string'}, default: [] },
+    author: {type: 'list', of: {type: 'string'} },
+    published: { type: 'date' },
+    language: { type: 'string' },
+    bibliography: { type: 'string' },
+    canonicalUrl: { type: 'string' },
+  },
+  computedFields: {
+    ...computedFields,
+    structuredData: {
+      type: 'json',
+      resolve: (doc) => ({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: doc.title,
+        datePublished: doc.date,
+        dateModified: doc.lastmod || doc.date,
+        description: doc.summary,
+        image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
+        url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
+      }),
+    },
+  },
+}))
+
+export const Movies = defineDocumentType(() => ({
+  name: 'Movies',
+  filePathPattern: 'movies/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    date: { type: 'date', required: true },
+    cover: { type: 'string', required: true },
+    genres: { type: 'list', of: { type: 'string' }, default: [] },
+    director: {type: 'list', of: {type: 'string'} },
+    writer: {type: 'list', of: {type: 'string'} },
+    published: { type: 'date' },
+    language: { type: 'string' },
+    country: { type: 'string' },
+    bibliography: { type: 'string' },
+    canonicalUrl: { type: 'string' },
+  },
+  computedFields: {
+    ...computedFields,
+    structuredData: {
+      type: 'json',
+      resolve: (doc) => ({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: doc.title,
+        datePublished: doc.date,
+        dateModified: doc.lastmod || doc.date,
+        description: doc.summary,
+        image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
+        url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
+      }),
+    },
+  },
+}))
+
 export const Authors = defineDocumentType(() => ({
   name: 'Authors',
   filePathPattern: 'authors/**/*.mdx',
@@ -145,7 +213,7 @@ export const Authors = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Blog, Authors],
+  documentTypes: [Blog, Books, Movies, Authors],
   mdx: {
     cwd: process.cwd(),
     remarkPlugins: [
