@@ -84,7 +84,7 @@ export default function ListLayout({
           <h1 className="mr-3 text-3xl font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
             Books
           </h1>
-          <h1 className="mr-3 text-3xl font-medium uppercase text-primary-500 opacity-75 hover:text-primary-600 dark:hover:text-primary-400 dark:opacity-25">
+          <h1 className="mr-3 text-3xl font-medium uppercase text-primary-500 opacity-75 hover:text-primary-600 dark:opacity-25 dark:hover:text-primary-400">
             <Link href="/movies">Movies</Link>
           </h1>
         </div>
