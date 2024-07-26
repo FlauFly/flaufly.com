@@ -81,8 +81,8 @@ export default function ListLayout({
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="mb-4 flex justify-center space-x-4 text-3xl">
-          <h1 className="font-medium">Books</h1>
-          <h1 className="text-gray-600 opacity-75 dark:text-gray-400 dark:opacity-25">
+          <h1 className="mr-3 text-3xl font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">Books</h1>
+          <h1 className="mr-3 text-3xl font-medium uppercase text-primary-500 opacity-75 hover:text-primary-600 dark:hover:text-primary-400 dark:opacity-25">
             <Link href="/movies">Movies</Link>
           </h1>
         </div>
