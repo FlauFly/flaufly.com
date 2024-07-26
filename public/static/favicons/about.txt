@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Playwrite BE WAL
+- Font Author: Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)
+- Font Source: https://fonts.gstatic.com/s/playwritebewal/v1/DtV1Jwq5QbIzyrA6DHdJ2BksuUmanQtEYjAlv96WFsWCGfugHxwiSZp8.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
