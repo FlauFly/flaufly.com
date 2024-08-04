@@ -1,7 +1,9 @@
 <h1 align="center">FlauFly's Digital Garden</h1>
-<p align="center">My little corner of the web where I try to plant small ideas one step at the time</p>
+<p align="center"><i>My little corner of the web where I try to plant small ideas one step at a time</i></p>
 
-This is my [digital garden](https://maggieappleton.com/garden-history) bootstrapped with **Tailwind Nextjs Starter Blog**.
+## Motivation
+
+This is my [digital garden](https://maggieappleton.com/garden-history) bootstrapped with [**Tailwind Nextjs Starter Blog**](https://github.com/timlrx/tailwind-nextjs-starter-blog).
 
 ## Tech Stack
 
