@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'FlauFly - Digital Garden',
+  title: 'Digital Garden',
   author: 'FlauFly',
   headerTitle: 'FlauFly',
   description: 'Personal digital garden',
