@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Digital Garden',
   author: 'FlauFly',
   headerTitle: 'FlauFly',
-  description: 'Personal digital garden',
+  description: 'My little corner of the web where I try to grow my thoughts and share it with others.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.flaufly.com/',

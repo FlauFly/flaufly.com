@@ -130,7 +130,7 @@ export default function ListLayout({
                     <div className="flex justify-center">
                       <Link href={`/${path}`}>
                         <Image
-                          className="aspect-[10/16] outline transition duration-300 hover:-translate-y-1 hover:opacity-100 hover:outline-8 hover:outline-primary-800 dark:opacity-50 hover:dark:opacity-100"
+                          className="aspect-[10/16] opacity-80 outline transition duration-300 hover:-translate-y-1 hover:opacity-100 hover:outline-8 hover:outline-primary-800 dark:opacity-50 hover:dark:opacity-100"
                           src={cover}
                           alt={title}
                           width={200}
